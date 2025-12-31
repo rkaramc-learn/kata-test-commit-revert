@@ -4,7 +4,7 @@ from kata_test_commit_revert.formulae import fibonacci
 class TestFibonacci:
     def test_fibonacci(self):
         assert True
-    
+
     def test_fibonacci_0(self):
         assert fibonacci(0) == 0
 
@@ -16,3 +16,6 @@ class TestFibonacci:
 
     def test_fibonacci_3(self):
         assert fibonacci(3) == 2
+
+    def test_fibonacci_4(self):
+        assert fibonacci(4) == 3
