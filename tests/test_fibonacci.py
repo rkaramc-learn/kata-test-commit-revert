@@ -1,3 +1,4 @@
+import pytest
 from pytest_benchmark.fixture import BenchmarkFixture
 from kata_test_commit_revert.formulae import fibonacci
 
@@ -67,9 +68,13 @@ class TestFibonacci:
         assert fibonacci(19) == 4181
 
     def test_fibonacci_20(self, benchmark: BenchmarkFixture):
-        result = benchmark(fibonacci, 20)  # pyright: ignore[reportUnknownVariableType]
-        assert result == 6765
+        benchmark(fibonacci, 20)
+        assert fibonacci(20) == 6765
 
     def test_fibonacci_30(self, benchmark: BenchmarkFixture):
-        result = benchmark(fibonacci, 30)  # pyright: ignore[reportUnknownVariableType]
-        assert result == 832040
+        benchmark(fibonacci, 30)
+        assert fibonacci(30) == 832040
+
+    def test_fibonacci_negative(self):
+        with pytest.raises(ValueError):
+            _ = fibonacci(-1)

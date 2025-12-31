@@ -3,6 +3,8 @@ import functools
 
 @functools.lru_cache(maxsize=None)
 def fibonacci(n: int) -> int:
+    if n < 0:
+        raise ValueError("n must be non-negative")
     if n == 0:
         return 0
     if n == 1:
