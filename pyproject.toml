@@ -4,10 +4,13 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "Rajeev Karamcheti", email = "rkaramc@gmail.com" }
+    { name = "Rajeev Karamcheti", email = "rkaramc@gmail.com" },
 ]
 requires-python = ">=3.13"
 dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
 
 [project.scripts]
 kata-test-commit-revert = "kata_test_commit_revert:main"
