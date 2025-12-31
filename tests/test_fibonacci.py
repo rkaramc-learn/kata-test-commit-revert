@@ -22,3 +22,48 @@ class TestFibonacci:
 
     def test_fibonacci_5(self):
         assert fibonacci(5) == 5
+
+    def test_fibonacci_6(self):
+        assert fibonacci(6) == 8
+
+    def test_fibonacci_7(self):
+        assert fibonacci(7) == 13
+
+    def test_fibonacci_8(self):
+        assert fibonacci(8) == 21
+
+    def test_fibonacci_9(self):
+        assert fibonacci(9) == 34
+
+    def test_fibonacci_10(self):
+        assert fibonacci(10) == 55
+
+    def test_fibonacci_11(self):
+        assert fibonacci(11) == 89
+
+    def test_fibonacci_12(self):
+        assert fibonacci(12) == 144
+
+    def test_fibonacci_13(self):
+        assert fibonacci(13) == 233
+
+    def test_fibonacci_14(self):
+        assert fibonacci(14) == 377
+
+    def test_fibonacci_15(self):
+        assert fibonacci(15) == 610
+
+    def test_fibonacci_16(self):
+        assert fibonacci(16) == 987
+
+    def test_fibonacci_17(self):
+        assert fibonacci(17) == 1597
+
+    def test_fibonacci_18(self):
+        assert fibonacci(18) == 2584
+
+    def test_fibonacci_19(self):
+        assert fibonacci(19) == 4181
+
+    def test_fibonacci_20(self):
+        assert fibonacci(20) == 6765
